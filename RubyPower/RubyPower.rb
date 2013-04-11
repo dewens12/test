@@ -1,5 +1,4 @@
-
-+#class PowerRuby
+class PowerRuby
   
   def get_value(message)
    print "Enter #{message}:"
