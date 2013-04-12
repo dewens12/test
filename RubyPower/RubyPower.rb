@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 class PowerRuby
   
   def get_value(message)
+=======
+
+
+class PowerRuby  
+  def value (message)
+>>>>>>> PowerRuby update
    print "Enter #{message}:"
     v=gets
     return v.to_f
@@ -10,12 +17,12 @@ class PowerRuby
     return a.to_f
     p=gets
     return p.to_f  
-  end
+   end
   
-  resistance = get_value("resistance (ohms)")
-  current = get_value("current (amps)")
-  voltage = get_value("voltage (volts)")
-  power = get_value("power (watts)")
+  resistance = value("resistance (ohms)")
+  current = value("current (amps)")
+  voltage = value("voltage (volts)")
+  power = value("power (watts)")
   
     current = voltage/resistance if current== 0.0
     resistance = voltage/current if resistance == 0.0
@@ -26,5 +33,4 @@ class PowerRuby
     puts "Current is  #{current} Amps"
     puts "Voltage  is #{voltage} Volts"
     puts "Power is  #{power} Watts"
-    
- 
+end
