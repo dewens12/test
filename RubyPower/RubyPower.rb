@@ -1,32 +1,21 @@
-<<<<<<< HEAD
-class PowerRuby
-  
-  def get_value(message)
-=======
-
 
 class PowerRuby  
   def value (message)
->>>>>>> PowerRuby update
-   print "Enter #{message}:"
-    v=gets
+    puts "Enter #{message}:"
+    voltage = gets
     return v.to_f
-    r=gets
+    resistance = gets
     return r.to_f
-    a=gets
+    current = gets
     return a.to_f
-    p=gets
+    power = gets
     return p.to_f  
    end
   
-  resistance = value("resistance (ohms)")
-  current = value("current (amps)")
-  voltage = value("voltage (volts)")
-  power = value("power (watts)")
   
     current = voltage/resistance if current== 0.0
     resistance = voltage/current if resistance == 0.0
-    voltage = resistance * current #if  voltage == 0.0
+    voltage = resistance * current if  voltage == 0.0
     power = voltage * current if power ==0.0
      
     puts "Resistance is #{resistance} Ohms"
